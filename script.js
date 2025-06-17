@@ -1,0 +1,87 @@
+const sellers = [
+  "Aadil Tajdar",
+  "Aamir Shahzad",
+  "Aashir Afridi",
+  "Abbas Ali Mirza",
+  "Abdul Aziz Baloch",
+  "Abdul Basit",
+  "Abdullah Mehtab Baig",
+  "Abdullah Noonrani",
+  "Abdulrehman Chanda",
+  "Abid Salar",
+  "Abubkr Amir Sheikh",
+  "Ahmed Anjarwala",
+  "Ahmed Raza",
+  "Ahsan Mehmood",
+  "Ahsan Salahuddin Ahmed",
+  "Aimal Kakar",
+  "Aiman Akber Ali",
+  "Alee Khan",
+  "Ali Ahmed",
+  "Ali Rajpoot",
+  "Ali Raza Shah",
+  "Ali Riaz",
+  "Ali Shah",
+  "Amdad Khan",
+  "Ameer Hamza",
+  "Amin Ur Rehman",
+  "Amjad Mehmood",
+  "Ammad Khan",
+  "Ammar Hafeez",
+  "Ammar Haider",
+  "Ammar Saeed",
+  "Aqib Khan",
+  "Arif Umar",
+  "Arqam Yousuf",
+  "Arqam Zafar",
+  "Arsalan Imran",
+  "Arshad Khan",
+  "Arslan Da G",
+  "Arslan Ghaffar",
+  "Asad Agha",
+  "Asad Khalil",
+  "Asad Khan Khalil",
+  "Asad Siddiki",
+  "Asad Sultan",
+  "Asif Pervaiz",
+  "Asim Shehzad",
+  "Asjid",
+  "Assad Riaz",
+  "Aswad Yahya",
+  "Athar Rehman",
+  "Awais Ahmad Khan",
+  "Awais Ikram",
+  "Awais Ismaeel",
+  "Azam Khan",
+  "Azam Rashid",
+  "Babar Ali",
+  "Baber Khan",
+  "Badar Gohar",
+  "Bahlol Khan Orakzai",
+  "BalOch Asif",
+  "Basim Sheikh",
+  "Behzad Hasan",
+  "Behzad Hassan",
+  "Bilal Ahmed",
+  "Bilal Jarral",
+  "CH Bilal Hafeez",
+  "Danish Khan",
+  "Dawood Mubarik",
+  "Ehsan UlHaq",
+  "Emraan Malick",
+  "Esrar Shenwari",
+  // Add more from your list as needed
+];
+
+function checkSeller() {
+  const input = document.getElementById("nameInput").value.trim().toLowerCase();
+  const result = document.getElementById("result");
+  const found = sellers.some(name => name.toLowerCase() === input);
+  if (found) {
+    result.textContent = "✅ Legit seller!";
+    result.style.color = "green";
+  } else {
+    result.textContent = "❌ Not on the legit seller list.";
+    result.style.color = "red";
+  }
+}
